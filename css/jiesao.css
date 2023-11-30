@@ -1,0 +1,370 @@
+/* General settings*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* Set header style */
+#top {
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+  height: 38px;
+  background-color: rgb(16, 35, 65);
+  font-size: 0px;
+  text-align: center;
+}
+
+#top:hover {
+  transition: filter 1s ease-in-out;
+  filter: blur(3px);
+}
+
+#top p {
+  position: relative;
+  top: 8px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  border: none;
+  box-shadow: none;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2.5px;
+}
+
+/* Set navigation bar style */
+.header {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  margin: 8px 0 0 0;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+  opacity: 0;
+  animation: slideTop .5s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover,
+.navbar a.active {
+  font-weight: bold;
+  color: #801f1f;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+input:nth-child(1) {
+  margin: 0 0 0 0;
+  width: 550px;
+  height: 40px;
+  border: 1px solid rgb(16, 35, 65);
+  border-radius: 0px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+}
+
+input:nth-child(1):focus {
+  transition: 1s;
+  border-color: rgb(16, 35, 65);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+input:nth-child(3) {
+  display: none;
+  --width: 50px;
+  --timing: 2s;
+  border: 0;
+  width: var(--width);
+  height: 30px;
+  padding-block: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 10px;
+  background: green;
+  transition: all 0.2s;
+  border-radius: 5px;
+  align-items: center;
+}
+
+input:nth-child(2):hover {
+  background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+  animation: var(--timing) linear dance6123 infinite;
+  transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+  to {
+    background-position: var(--width);
+  }
+}
+
+#xian {
+  background-color: #ebebeb;
+  width: 100%;
+  height: 1px;
+  padding: 0 0 0 0;
+  margin: 14px 0 0 0;
+}
+
+/* carousel */
+
+
+/* Set content section */
+#content {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* left part */
+#content-left {
+  width: 400px;
+  margin-left: 60px;
+}
+
+#content-left img {
+  width: 400px;
+  height: 600px;
+}
+
+#content-left p {
+  color: rgb(108, 108, 108);
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+/* right part*/
+#content-right {
+  width: 400px;
+}
+
+#content-right h2 {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+#content-right p {
+  color: rgb(108, 108, 108);
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+/* line */
+.xian {
+  width: 900px;
+  height: 3px;
+  background: rgb(255, 166, 0);
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/*  */
+.fbt {
+  width: 900px;
+  margin: 0 auto;
+
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.fbt h2 {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.fbt p {
+  color: rgb(108, 108, 108);
+  font-size: 16px;
+}
+
+/* Content area picture settings */
+#content-image {
+  line-height: 30px;
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image img {
+  border-radius: 15px;
+  transition: 1s ease-in-out;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.image p {
+  width: 300px;
+  text-align: center;
+  letter-spacing: 2px;
+
+}
+
+
+.image img:hover {
+  scale: 0.8;
+}
+
+/*  */
+#contentt {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.contentt-image {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.contentt-image img {
+  width: 300px;
+  height: 450px;
+  margin-left: 60px;
+}
+
+.contentt-image p {
+  background-color: #eeeeee;
+
+  padding: 25px;
+  width: 350px;
+
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin: 0;
+  margin-right: 50px;
+}
+
+/* Add this style for the new content section */
+#new-content {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#new-content .contentt-image {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#new-content img {
+  width: 300px;
+  height: 450px;
+  margin-right: 60px;
+}
+
+#new-content p {
+  background-color: #eeeeee;
+  padding: 25px;
+  width: 350px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin: 0;
+  margin-right: 50px;
+}
+
+/* Audio */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.music-player {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.music-player img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.music-player h2 {
+  margin-bottom: 5px;
+}
+
+.music-player p {
+  margin: 0;
+}
+
+
+#footer {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+}

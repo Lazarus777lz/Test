@@ -1,0 +1,200 @@
+body {
+  background-color: white;
+}
+
+/* 设置顶部 */
+#top {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#top img {
+  padding-left: 20px;
+  width: 67px;
+  height: 24px;
+}
+
+#search {
+  margin-left: 200px;
+  width: 346px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 84px;
+  border: 0;
+  outline: none;
+  /* 移除元素的轮廓线 */
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  color: #636363;
+
+}
+
+#top-right {
+  width: 300px;
+  display: flex;
+  justify-content: right;
+}
+
+#top-right p {
+  color: rgb(71, 71, 71);
+  width: 64px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  line-height: 40px;
+  /* 使用行高属性时，通过将行高设置为与容器高度相同，文本内容将在垂直方向上居中显示。 */
+}
+
+#top p:hover {
+  background-color: #f5f5f5;
+}
+
+/* 设置大内容 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* 设置左侧 */
+#nav {
+  width: 225px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#nav ul {
+  margin-top: 10px;
+  width: 225px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+#nav ul li:nth-child(1) {
+  width: 207px;
+  height: 48px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding-left: 16px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  background-color: #f5f5f5;
+  margin-bottom: 8px;
+
+}
+
+#nav ul li {
+  display: flex;
+  align-items: center;
+  width: 207px;
+  height: 48px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding-left: 16px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  margin-bottom: 8px;
+
+}
+
+#nav ul li:hover {
+  background-color: #f5f5f5;
+}
+
+.li-image {
+  width: 24px;
+  height: 24px;
+
+}
+
+#touxiang {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+
+}
+
+span {
+  color: black;
+  margin-left: 12px;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  margin-left: 12px;
+  ;
+  font-weight: bold;
+}
+
+/* 设置右侧 */
+#right-all {
+  width: 917px;
+  padding-left: 24px;
+}
+
+/* 设置右侧导航栏 */
+#content-right-nav {
+  display: flex;
+}
+
+#content-right-nav p {
+  width: 32px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 40px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+
+}
+
+#content-right-nav p:hover {
+  background-color: #f5f5f5;
+}
+
+/* 设置右侧内容 */
+#content-right {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content-right-main {
+  margin-bottom: 10px;
+}
+
+.content-right-main img {
+  width: 211px;
+  height: 282px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  /* 设置过渡效果 */
+  transition: 2s ease-in-out;
+}
+
+.content-right-main img:hover {
+  /* 滤镜 */
+  filter: blur(10px);
+}
