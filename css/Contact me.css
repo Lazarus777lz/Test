@@ -384,3 +384,11 @@ h1 {
 #mkf:hover {
   filter: opacity(0.5);
 }
+
+#content-wenzi {
+  font-size: 17px;
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
